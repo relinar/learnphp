@@ -15,21 +15,8 @@ public function __construct($w, $h, $l){
        }
  }
 
-
 $box1 = new Box();
-
-
 $box1->width = 10;
-$box1->height = 10;
-$box1->length = 10;
-
-var_dump($box1);
-var_dump($box1->volume());
-
-$box2 = new Box(20,20,20);
-  
-
-var_dump($box2);
-var_dump($box2->volume());
-var_dump($box1);
-
+$box2 = $box1;
+$box2->width = 20;
+var_dump($box1->width);
