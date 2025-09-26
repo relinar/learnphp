@@ -1,4 +1,4 @@
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+ <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
         <symbol
             id="aperture"
             fill="none"
@@ -58,7 +58,7 @@
         <div class="nav-scroller py-1 mb-3 border-bottom">
             <nav class="nav nav-underline justify-content-between">
                 <a class="nav-item nav-link link-body-emphasis active" href="/">World</a>
-                <a class="nav-item nav-link link-body-emphasis" href="/us.php">U.S.</a>
+                <a class="nav-item nav-link link-body-emphasis" href="/us">U.S.</a>
                 <a class="nav-item nav-link link-body-emphasis" href="#">Technology</a>
                 <a class="nav-item nav-link link-body-emphasis" href="#">Design</a>
                 <a class="nav-item nav-link link-body-emphasis" href="#">Culture</a>
@@ -71,4 +71,3 @@
                 <a class="nav-item nav-link link-body-emphasis" href="#">Travel</a>
             </nav>
         </div>
-    </div>
