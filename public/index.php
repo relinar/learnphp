@@ -4,11 +4,6 @@ if (preg_match('/\.(?:png|jpg|jpeg|gif|css|js)$/', $_SERVER["REQUEST_URI"])) {
 }
 
 
-
-
-
-
-
 spl_autoload_register(function ($class){
     $class = substr($class, 4);
     require_once __DIR__ . "/../src/$class.php";
@@ -17,67 +12,7 @@ spl_autoload_register(function ($class){
 require __DIR__ . '/../helpers.php';
 require __DIR__ . '/../routes.php';
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$router = new App\Router($_SERVER['REQUEST_URI']);
+$router = new App\Router($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
 $match = $router->match();
 if($match){
     if(is_callable($match['action'])){
