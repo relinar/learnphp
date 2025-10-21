@@ -12,7 +12,7 @@ class DB
     public function __construct()
     {
         try {
-            $this->conn = new PDO("sqlite:db.sqlite");
+$this->conn = new PDO("sqlite:" . __DIR__ . "/../db.sqlite");
             // set the PDO error mode to exception
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
