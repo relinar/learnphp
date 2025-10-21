@@ -1,4 +1,4 @@
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+ <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
         <symbol
             id="aperture"
             fill="none"
@@ -51,7 +51,7 @@
                             <path d="M21 21l-5.2-5.2"></path>
                         </svg>
                     </a>
-                    <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+                    <a class="btn btn-sm btn-outline-secondary" href="/register">Sign up</a>
                 </div>
             </div>
         </header>
@@ -71,4 +71,3 @@
                 <a class="nav-item nav-link link-body-emphasis" href="#">Travel</a>
             </nav>
         </div>
-    </div>
