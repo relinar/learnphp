@@ -51,7 +51,7 @@ class DB
     {   
         $fieldNames = array_keys($fields);
         $fieldNamesText = implode(', ', $fieldNames);
-
+        
         $fieldValuesText = implode("', '", $fields);
 
         $sql = "INSERT INTO $table ($fieldNamesText)
@@ -73,7 +73,7 @@ class DB
         // execute the query
         $stmt->execute();
     }
-
+    
     public function delete($table, $id) {
         $sql = "DELETE FROM $table WHERE id=$id";
 

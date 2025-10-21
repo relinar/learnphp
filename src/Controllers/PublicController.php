@@ -74,4 +74,3 @@ class PublicController
         dump($_POST);
     }
 }
-
