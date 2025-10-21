@@ -1,4 +1,4 @@
- <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
         <symbol
             id="aperture"
             fill="none"
@@ -32,26 +32,27 @@
                         class="blog-header-logo text-body-emphasis text-decoration-none"
                         href="#">Large</a>
                 </div>
-                <div class="col-4 d-flex justify-content-end align-items-center">
+                <div class="col-4 d-flex justify-content-end align-items-center gap-2">
                     <a class="link-secondary" href="#" aria-label="Search">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            class="mx-3"
-                            role="img"
-                            viewBox="0 0 24 24">
-                            <title>Search</title>
-                            <circle cx="10.5" cy="10.5" r="7.5"></circle>
+@@ -51,23 +51,35 @@
                             <path d="M21 21l-5.2-5.2"></path>
                         </svg>
                     </a>
-                    <a class="btn btn-sm btn-outline-secondary" href="/register">Sign up</a>
+                    <?php if(auth()): ?>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <?=auth()->email?>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                            </ul>
+                        </div>
+                    <?php else: ?>
+                        <a class="btn btn-sm btn-outline-secondary" href="/register">Sign up</a>
+                        <a class="btn btn-sm btn-outline-primary" href="/login">Login</a>
+                    <?php endif;?>
                 </div>
             </div>
         </header>
