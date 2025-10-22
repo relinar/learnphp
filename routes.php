@@ -29,6 +29,8 @@ Router::get('/logout', [AuthController::class, 'logout']);
 Router::get('/users', [UsersController::class, 'index']);
 Router::get('/users/create', [UsersController::class, 'create']);
 Router::post('/users/store', [UsersController::class, 'store']);
-Router::get('/users/edit', [UsersController::class, 'edit']);       // id via GET
-Router::post('/users/update', [UsersController::class, 'update']); // id via POST
-Router::post('/users/delete', [UsersController::class, 'destroy']); // id via POST
+Router::get('/users/view', [UsersController::class, 'view']);       
+Router::get('/users/edit', [UsersController::class, 'edit']);       
+Router::post('/users/update', [UsersController::class, 'update']); 
+Router::post('/users/delete', [UsersController::class, 'destroy']); 
+Router::get('/users/delete', [UsersController::class, 'destroy']); 

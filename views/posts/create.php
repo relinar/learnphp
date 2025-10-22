@@ -1,19 +1,17 @@
 <?php include __DIR__ . '/../partials/header.php'; ?>
 <main class="container">
-    <form action="/posts" method="POST" enctype="multipart/form-data">
+    <h1 class="mb-3">Add User</h1>
+    <form action="/users/store" method="POST" class="mb-3">
         <div class="mb-3">
-            <label for="title" class="form-label">Title</label>
-            <input name="title" type="text" class="form-control" id="title" placeholder="Title">
+            <label for="email" class="form-label">Email</label>
+            <input name="email" id="email" type="email" class="form-control" placeholder="Email" required>
         </div>
         <div class="mb-3">
-            <label for="body" class="form-label">Content</label>
-            <textarea name="body" class="form-control" id="body" rows="12"></textarea>
-        </div>
-        <div class="mb-3">
-            <label for="image" class="form-label">Image</label>
-            <input name="image[]" type="file" class="form-control" id="image" accept="image/*" multiple>
+            <label for="password" class="form-label">Password</label>
+            <input name="password" id="password" type="password" class="form-control" placeholder="Password" required>
         </div>
         <button class="btn btn-primary">Create</button>
+        <a class="btn btn-secondary" href="/users">Back</a>
     </form>
 </main>
 <?php include __DIR__ . '/../partials/footer.php'; ?>
