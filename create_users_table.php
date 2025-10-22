@@ -7,4 +7,4 @@ $db->exec('CREATE TABLE IF NOT EXISTS users (
     password TEXT NOT NULL
 )');
 
-echo "✅ Database ja tabel 'users' on loodud!\n";
+echo "Database ja tabel 'users' on loodud!\n";

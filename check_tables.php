@@ -6,10 +6,10 @@ $tables = $result->fetchAll(PDO::FETCH_ASSOC);
 
 print_r($tables);
 if (count($tables) > 0) {
-    echo "✅ Tabelid olemas:\n";
+    echo "Tabelid olemas:\n";
     foreach ($tables as $table) {
         echo "- " . $table['name'] . "\n";
     }
 } else {
-    echo "❌ Tabeleid ei leitud.\n";
+    echo " Tabeleid ei leitud.\n";
 }
